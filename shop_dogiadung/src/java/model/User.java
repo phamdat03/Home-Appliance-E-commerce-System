@@ -1,0 +1,59 @@
+package model;
+
+import java.sql.Timestamp;
+
+public class User {
+    private int userId;          // đổi từ id → userId
+    private String fullName;
+    private String email;
+    private String phone;
+    private String passwordHash;
+    private String address;
+    private String role;
+    private Timestamp createdAt;
+
+    public User() {}
+
+    public User(int userId, String fullName, String email, String phone,
+                String passwordHash, String address, String role, Timestamp createdAt) {
+        this.userId = userId;   // sửa id → userId
+        this.fullName = fullName;
+        this.email = email;
+        this.phone = phone;
+        this.passwordHash = passwordHash;
+        this.address = address;
+        this.role = role;
+        this.createdAt = createdAt;
+    }
+
+    // GETTERS & SETTERS
+
+    public int getUserId() {        // sửa getId → getUserId
+        return userId;
+    }
+
+    public void setUserId(int userId) {    // sửa setId → setUserId
+        this.userId = userId;
+    }
+
+    public String getFullName() { return fullName; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+
+    public String getPasswordHash() { return passwordHash; }
+    public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
+
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+
+    public String getRole() { return role; }
+    public void setRole(String role) { this.role = role; }
+
+    public Timestamp getCreatedAt() { return createdAt; }
+    public void setCreatedAt(Timestamp createdAt) { this.createdAt = createdAt; }
+}

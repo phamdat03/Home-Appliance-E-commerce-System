@@ -1,0 +1,73 @@
+/* 1. Navbar Chính (Main Navbar) */
+.main-navbar {
+  /* Màu nền đỏ đô cho Navbar trên cùng */
+  background-color: #A30000 !important; 
+  transition: background-color 0.3s ease; 
+}
+
+/* 2. Thanh Danh mục Sản phẩm (Category Navbar) */
+.navbar-expand-lg.bg-secondary {
+  /* Màu nền xanh navy sẫm cho thanh danh mục */
+  background-color: #A30000 !important; 
+}
+
+
+/* =================================== */
+/* CSS Cho SLIDE (CAROUSEL) */
+/* =================================== */
+
+/* Chiều cao cố định 35% màn hình */
+.main-content-padding {
+  padding-top: 30px !important; 
+}
+.carousel-item-height {
+  /* KHÔNG CÓ padding-top ở đây nữa */
+  height: 70vh; /* Chiều cao slide mới theo yêu cầu */
+  max-height: 500px; 
+  background-color: #000; /* Đặt nền đen để ẩn khoảng trắng nếu ảnh có tỷ lệ khác */
+}
+
+/* Đảm bảo hình ảnh lấp đầy khung mà KHÔNG bị biến dạng (ảnh sẽ bị cắt) */
+.carousel-item-height img {
+    /* Đã trở lại 'cover' theo yêu cầu (ảnh sẽ bị cắt xén nếu tỷ lệ không khớp) */
+    object-fit: cover; 
+    height: 100%;
+}
+
+
+/* =================================== */
+/* CSS Cơ bản cho các thành phần khác */
+/* =================================== */
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.footer-cta {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+.price {
+  color: #263238;
+  font-size: 24px;
+}
+
+.card-title {
+  color: #263238
+}
+
+.sale {
+  color: #E53935
+}
+
+.sale-badge {
+  background-color: #E53935
+}
+
+.text-red {
+    color: #E53935 !important;
+}
+
+.dropdown{
+    color: #A30000;
+}
